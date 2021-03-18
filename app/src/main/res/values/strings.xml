@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="textView">Hello World!</string>
+    <string name="editTextHint">Введите текст</string>
+    <string name="checkBoxText">Точно?</string>
+    <string name="buttonText">Нажми</string>
+    <string name="switchText">Точно?</string>
+    <string name="editTextTextPasswordHint">TextPassword</string>
+    <string name="editTextNumberHint">TextNumber</string>
+    <string name="editTextPhoneHint">Phone</string>
+    <string name="editTextTextEmailAddressHint">Email</string>
+    <string name="editTextTextPersonNameHint">Name</string>
+    <string name="editTextTextHint">Text</string>
 </resources>
