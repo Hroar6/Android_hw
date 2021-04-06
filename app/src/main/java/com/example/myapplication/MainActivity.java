@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.widget.Button;
@@ -20,8 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Intent intent = getIntent();
+        int theme = intent.getIntExtra(Constants.firstActivityDataKey, R.style.Theme_MyApplication);
+        setTheme(theme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        if (theme == R.style.Theme_MyApplication) {
+            setContentView(R.layout.activity_main);
+        } else {
+            setContentView(R.layout.activity_main_dark);
+        }
         findViews();
         setNumericBtnBehavior();
         setArithmeticBtnBehavior();
