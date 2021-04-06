@@ -29,8 +29,6 @@ public class ThemeActivity extends AppCompatActivity {
     private void lightThemeBtnClick() {
         lightThemeBtn.setOnClickListener(v -> {
             Intent intent = new Intent(ThemeActivity.this, MainActivity.class);
-//            int theme = R.style.Theme_MyApplication;
-//            intent.putExtra(Constants.firstActivityDataKey, theme);
             startActivity(intent);
         });
     }
